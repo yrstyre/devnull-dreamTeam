@@ -10,18 +10,42 @@ namespace devnull
 {
     public class WebClient
     {
-        public void Do(string target, string direction, string entityId, string sessionId)
+        public async void Walk(string direction)
         {
-            //target = "move";
-            //direction = "r";
-            //entityId = "e9accfc9-e01a-4af6-a727-dd3e856f7575";
-            //sessionId = "5da97370-d4cb-4ee8-9c45-6bfdfedf432e";
+            var target = "move";
+            var entityId = "e9accfc9-e01a-4af6-a727-dd3e856f7575";
+            var sessionId = "b157cf63-628e-4868-9488-893e58664c67";
 
             var fuckmarcus =
                 string.Format("/api/?target={0}&direction={1}&entityid={2}&sessionId={3}", target, direction, entityId, sessionId);
 
-            RunAsync(fuckmarcus);
+            await RunAsync(fuckmarcus);
         }
+
+        public async void Pickup()
+        {
+            var target = "pickup";
+            var entityId = "";
+            var sessionId = "b157cf63-628e-4868-9488-893e58664c67";
+
+            var fuckmarcus =
+                string.Format("/api/?target={0}&&entityid={1}&sessionId={2}", target, entityId, sessionId);
+
+            await RunAsync(fuckmarcus);
+        }
+
+        public async void Scan()
+        {
+            var target = "scan";
+            var entityId = "2";
+            var sessionId = "b157cf63-628e-4868-9488-893e58664c67";
+
+            var fuckmarcus =
+                string.Format("/api/?target={0}&&entityid={1}&sessionId={2}", target, entityId, sessionId);
+
+            var result = await RunAsync(fuckmarcus);
+        }
+
 
         public async Task<string> RunAsync(string request)
         {

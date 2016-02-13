@@ -4,6 +4,5 @@ C:\Projects\devnull\devnull\obj\Debug\devnull.dll
 C:\Projects\devnull\devnull\obj\Debug\devnull.pdb
 C:\Projects\devnull2\devnull-dreamTeam\devnull\bin\Debug\devnull.dll
 C:\Projects\devnull2\devnull-dreamTeam\devnull\bin\Debug\devnull.pdb
-C:\Projects\devnull2\devnull-dreamTeam\devnull\obj\Debug\devnull.csprojResolveAssemblyReference.cache
 C:\Projects\devnull2\devnull-dreamTeam\devnull\obj\Debug\devnull.dll
 C:\Projects\devnull2\devnull-dreamTeam\devnull\obj\Debug\devnull.pdb

@@ -14,7 +14,14 @@ namespace ConsoleApplication1
         {
             var dnClient = new WebClient();
 
-            //dnClient.Do();
+            for (int i = 0; i < 2; i++)
+            {
+                //dnClient.Walk("down");
+            }
+            dnClient.Scan();
+            dnClient.Pickup();
+
+            Console.Read();
         }
     }
 }
