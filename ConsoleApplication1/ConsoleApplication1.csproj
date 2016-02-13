@@ -50,7 +50,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\devnull\devnull\devnull.csproj">
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\devnull\devnull.csproj">
       <Project>{18838cab-bee6-4dbd-bd0d-cd7a264d92a3}</Project>
       <Name>devnull</Name>
     </ProjectReference>
