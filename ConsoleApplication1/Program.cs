@@ -18,8 +18,8 @@ namespace ConsoleApplication1
             {
                 //dnClient.Walk("down");
             }
-            dnClient.Scan();
-            dnClient.Pickup();
+            var result = dnClient.Scan();
+            //dnClient.Pickup();
 
             Console.Read();
         }

@@ -5,6 +5,8 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
+using models;
+using Newtonsoft.Json;
 
 namespace devnull
 {
@@ -25,25 +27,29 @@ namespace devnull
         public async void Pickup()
         {
             var target = "pickup";
-            var entityId = "";
-            var sessionId = "b157cf63-628e-4868-9488-893e58664c67";
-
-            var fuckmarcus =
-                string.Format("/api/?target={0}&&entityid={1}&sessionId={2}", target, entityId, sessionId);
-
-            await RunAsync(fuckmarcus);
-        }
-
-        public async void Scan()
-        {
-            var target = "scan";
-            var entityId = "2";
+            var entityId = "e9accfc9-e01a-4af6-a727-dd3e856f7575";
             var sessionId = "b157cf63-628e-4868-9488-893e58664c67";
 
             var fuckmarcus =
                 string.Format("/api/?target={0}&&entityid={1}&sessionId={2}", target, entityId, sessionId);
 
             var result = await RunAsync(fuckmarcus);
+        }
+
+        public async Task<RootObject> Scan()
+        {
+            var target = "scan";
+            var entityId = "e9accfc9-e01a-4af6-a727-dd3e856f7575";
+            var sessionId = "b157cf63-628e-4868-9488-893e58664c67";
+
+            var fuckmarcus =
+                string.Format("/api/?target={0}&&entityid={1}&sessionId={2}", target, entityId, sessionId);
+
+            var result = await RunAsync(fuckmarcus);
+
+            var scanresult = JsonConvert.DeserializeObject<RootObject>(result);
+
+            return scanresult;
         }
 
 
