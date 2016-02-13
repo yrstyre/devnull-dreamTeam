@@ -12,14 +12,15 @@ namespace devnull
     {
         public void Do(string target, string direction, string entityId, string sessionId)
         {
-            target = "move";
-            direction = "r";
-            entityId = "e9accfc9-e01a-4af6-a727-dd3e856f7575";
-            sessionId = "5da97370-d4cb-4ee8-9c45-6bfdfedf432e";
+            //target = "move";
+            //direction = "r";
+            //entityId = "e9accfc9-e01a-4af6-a727-dd3e856f7575";
+            //sessionId = "5da97370-d4cb-4ee8-9c45-6bfdfedf432e";
 
             var fuckmarcus =
                 string.Format("/api/?target={0}&direction={1}&entityid={2}&sessionId={3}", target, direction, entityId, sessionId);
 
+            RunAsync(fuckmarcus);
         }
 
         public async Task<string> RunAsync(string request)
