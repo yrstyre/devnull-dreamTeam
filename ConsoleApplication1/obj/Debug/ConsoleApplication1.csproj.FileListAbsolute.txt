@@ -1,0 +1,8 @@
+C:\Projects\devnull2\devnull-dreamTeam\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Projects\devnull2\devnull-dreamTeam\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Projects\devnull2\devnull-dreamTeam\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Projects\devnull2\devnull-dreamTeam\ConsoleApplication1\bin\Debug\devnull.dll
+C:\Projects\devnull2\devnull-dreamTeam\ConsoleApplication1\bin\Debug\devnull.pdb
+C:\Projects\devnull2\devnull-dreamTeam\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+C:\Projects\devnull2\devnull-dreamTeam\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Projects\devnull2\devnull-dreamTeam\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb

@@ -14,7 +14,7 @@ namespace ConsoleApplication1
         {
             var dnClient = new WebClient();
 
-            dnClient.Do();
+            //dnClient.Do();
         }
     }
 }
