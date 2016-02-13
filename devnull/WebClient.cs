@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using models;
 using Newtonsoft.Json;
@@ -12,6 +13,8 @@ namespace devnull
 {
     public class WebClient
     {
+        public RootObject ScanResult { get; set; }
+
         public async void Walk(string direction)
         {
             var target = "move";
@@ -36,7 +39,7 @@ namespace devnull
             var result = await RunAsync(fuckmarcus);
         }
 
-        public async Task<RootObject> Scan()
+        public async void Scan()
         {
             var target = "scan";
             var entityId = "e9accfc9-e01a-4af6-a727-dd3e856f7575";
@@ -47,9 +50,13 @@ namespace devnull
 
             var result = await RunAsync(fuckmarcus);
 
-            var scanresult = JsonConvert.DeserializeObject<RootObject>(result);
+            ParseScan(result);
+        }
 
-            return scanresult;
+        public void ParseScan(string json)
+        {
+            Thread.Sleep(3000);
+            ScanResult = JsonConvert.DeserializeObject<RootObject>(json);
         }
 
 

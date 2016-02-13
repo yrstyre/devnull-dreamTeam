@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using devnull;
+using models;
+using Newtonsoft.Json;
 
 namespace ConsoleApplication1
 {
@@ -18,10 +20,16 @@ namespace ConsoleApplication1
             {
                 //dnClient.Walk("down");
             }
-            var result = dnClient.Scan();
+            dnClient.Scan();
+
+            var scanresult = dnClient.ScanResult;
+
             //dnClient.Pickup();
 
             Console.Read();
         }
+
     }
+
 }
+
